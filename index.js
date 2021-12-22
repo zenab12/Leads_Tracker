@@ -26,10 +26,7 @@ function renderLeads(leads) {
     }
     ul_el.innerHTML = listItems;
 }
-let link = document.querySelector('a');
-link.addEventListener('click', function() {
-    this.href = this.href.slice(54, -3);
-});
+
 
 saveInput.addEventListener("click", function() {
     console.log(input_el.value);
