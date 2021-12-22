@@ -64,7 +64,8 @@ deleteAll.addEventListener('click', function() {
 let links = document.querySelectorAll('a');
 console.log(links);
 for (let i = 0; i < links.length; i++) {
-    links[i].href = links[i].href.slice(43, -3);
+    links[i].href = links[i].href.slice(53, -3);
     console.log(links[i].href)
 }
 console.log(links);
+console.log('updated')
