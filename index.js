@@ -65,8 +65,8 @@ let links = document.querySelectorAll('a');
 console.log(links);
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function() {
-        this.href = this.href.slice(43, -3);
-        console.log(links[i].href)
+        this.href = this.href.slice(43, -3).replace("https://zenab12.github.io/Leads_Tracker/", ``)
+        console.log(links[i].href);
     })
 }
 console.log('updated')
